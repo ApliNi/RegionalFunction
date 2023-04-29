@@ -1,0 +1,10 @@
+name: RegionalFunction
+version: '${project.version}'
+main: aplini.regionalfunction.RegionalFunction
+api-version: 1.19
+
+commands:
+  _rf:
+    description: mainCommand
+    usage: /_rf <FuncName> <var...>
+    permission: regionalfunction._rf

@@ -1,0 +1,19 @@
+
+
+# 根据玩家所在的世界执行不同指令
+spawn: # /_rf spawn
+  # 主世界
+  - worlds:
+      - 'world'
+      - 'world_nether'
+      - 'world_the_end'
+    run:
+      - runConsoleCommand: 'tp {player} 257.5 64 229.5 world'
+
+  # 空岛
+  - worlds:
+      - '_world_Skyblock'
+      - '_world_Skyblock_nether'
+      - '_world_Skyblock_the_end'
+    run:
+      - runConsoleCommand: 'tp {player} 0.5 65 0.5 _world_Skyblock'
